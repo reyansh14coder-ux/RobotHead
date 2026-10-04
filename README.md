@@ -27,7 +27,7 @@ Plug **only** the bare ESP32-CAM into power (no PCA9685, no servos, no wires on 
 
 ### Step 2 — Prepare the files
 
-Extract `RobotHead.zip`. Keep **all files in one folder** next to `RobotHead.ino` — the sketch will not compile if `app_httpd.cpp`, `camera_index.h`, `board_config.h` or `camera_pins.h` are elsewhere.
+Get the files (GitHub **Code → Download ZIP**, then extract, or `git clone`). Keep **all files in one folder** next to `RobotHead.ino` — the sketch will not compile if `app_httpd.cpp`, `camera_index.h`, `board_config.h` or `camera_pins.h` are elsewhere.
 
 ### Step 3 — Install Arduino IDE + ESP32 board support
 
@@ -67,7 +67,7 @@ Tools menu:
 
 ### Step 7 — (Optional) Apply the 2 LED edits
 
-Makes the red LED fast-blink while video streams. Everything works without it — LED just stays solid. See **§6**.
+Makes the red LED fast-blink while video streams. Everything works without it — LED just stays solid. See **§5**.
 
 ### Step 8 — Wire for flashing
 
@@ -130,7 +130,7 @@ pose[0] = 45
 sock.sendto(bytes([1] + pose), (ESP_IP, 4210))
 ```
 
-Full protocol in **§7**. Servos should ease to the target (default 150°/s max).
+Full protocol in **§6**. Servos should ease to the target (default 150°/s max).
 
 ### Step 14 — Set limits and save a boot pose
 
